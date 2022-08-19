@@ -2,26 +2,31 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
-## Development server
+`https://angular.io/api?query=pipe`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Type of pipes
 
-## Code scaffolding
+Uppercase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Lowercase
 
-## Build
+TitleCase
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Date
 
-## Running unit tests
+Decimal
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Currency
 
-## Running end-to-end tests
+Percent
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+i18nSelect
 
-## Further help
+i18Plural
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+KeyValue
+
+Json
+
+Async
+
