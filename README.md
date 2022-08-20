@@ -34,3 +34,10 @@ Styles with
 `PrimeFlex` https://www.primefaces.org/primeflex/setup
 
 `NgPrime`
+
+## Cambiar idioma de moneda, fecha ente otros de forma global en la app
+En modulo ppal app.module hago ésto
+
+import localeEs from '@angular/common/locales/es-PA'; => locale/aquí elijo el país 
+import { registerLocaleData } from '@angular/common'; => igual
+registerLocaleData(localeEs); // spanish panamá  => llamo función con parámetro que le di arriba 
