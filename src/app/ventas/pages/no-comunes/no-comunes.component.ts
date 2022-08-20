@@ -17,6 +17,12 @@ export class NoComunesComponent implements OnInit {
     'femenino': 'invitarla'
   };
 
+  cambiarCliente(){
+    this.name = 'Aquiles';
+    this.genero = 'masculino'
+  }
+
+
   // i18nPlural
   clientes: string[] = ['Maria', 'Pedro', 'Aquiles', 'José']; 
 
@@ -31,6 +37,9 @@ export class NoComunesComponent implements OnInit {
     'other': 'tenemos # clientes esperando.'
   }
 
+  borrarCliente(){
+    this.clientes.pop();
+  }
 
   constructor() { }
 
