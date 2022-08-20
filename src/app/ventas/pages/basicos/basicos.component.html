@@ -37,6 +37,7 @@
 
     <div class="p-col-6">
         <p-card>
+            <b>Is only Html not functionality of Pipes</b>
             <ul>
                 <li> fecha</li>
                 <li> fecha | date </li>
@@ -47,7 +48,16 @@
                 <!-- custom date -->
                 <li> fecha | date | MES </li>
                 <li> fecha | date | MES COMPLETO - DIA & AÑO </li>
+                <li> fecha | date : 'long': 'GMT-6'</li>
+                <li> fecha | date : 'long': 'GMT+8'</li>
+                <li> fecha | date : 'long': 'Gtm por defecto': 'idioma'</li>
             </ul>
+            <hr>
+
+            <ul>
+                <li></li>
+            </ul>
+
         </p-card>
     </div> 
     <div class="p-col-6">
@@ -63,6 +73,14 @@
                 <li>{{ fecha | date : 'MM'}}</li> 
                 <li>{{ fecha | date : 'MMMM, dd, yyyy'}}</li> 
             </ul>
+
+            <ul>
+                <li>{{ fecha | date : 'long': 'GMT-6'}}</li>
+                <li>{{ fecha | date : 'long': 'GMT+8'}}</li>
+                <li>{{ fecha | date : 'long':'':'en'}}</li>
+                <li>{{ fecha | date : 'long':'':'it'}}</li>
+            </ul>
+
         </p-card>
     </div> 
 

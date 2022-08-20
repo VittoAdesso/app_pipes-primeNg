@@ -9,8 +9,10 @@ import { VentasModule } from './ventas/ventas.module';
 
 //para  cambiar locale de la app de manera local IDIOMA de forma general(el name localEs es el nombre que le quiera dar )
 import localeEs from '@angular/common/locales/es-PA'; 
+import localeIt from '@angular/common/locales/it'; 
 import { registerLocaleData } from '@angular/common';
 registerLocaleData(localeEs); // spanish panamá 
+registerLocaleData(localeIt); //  Italian 
 
 
 @NgModule({
