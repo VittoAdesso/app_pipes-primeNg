@@ -1,5 +1,5 @@
 <div class="text-layout">
-    <h1>Pipes Básicos</h1>
+    <h1>Basic Pipes</h1>
     <p>Pipes de Angular - Usualmente incluidos en el Common Module</p>
 </div>
 
@@ -27,3 +27,43 @@
     </div>
 
 </div>
+
+<div class="text-layout">
+    <h1> Date | Fecha | Pipe </h1>
+    <p>Pipes de Angular - to show dates | fechas</p>
+</div>
+
+<div class="p-grid">
+
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li> fecha</li>
+                <li> fecha | date </li>
+                    <!-- pasando parametros -->
+                <li> fecha | date | short </li>
+                <li> fecha | date | long </li>
+                <li> fecha | date | era </li>
+                <!-- custom date -->
+                <li> fecha | date | MES </li>
+                <li> fecha | date | MES COMPLETO - DIA & AÑO </li>
+            </ul>
+        </p-card>
+    </div> 
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>{{ fecha }}</li>
+                <li>{{ fecha | date }}</li>
+                <!-- pasando parametros -->
+                <li>{{ fecha | date : 'short'}}</li> 
+                <li>{{ fecha | date : 'long'}}</li> 
+                <li>{{ fecha | date : 'era'}}</li> 
+                <!-- custom date -->
+                <li>{{ fecha | date : 'MM'}}</li> 
+                <li>{{ fecha | date : 'MMMM, dd, yyyy'}}</li> 
+            </ul>
+        </p-card>
+    </div> 
+
+</div>  
