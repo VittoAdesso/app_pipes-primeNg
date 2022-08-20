@@ -36,6 +36,9 @@ Styles with
 `NgPrime`
 
 ## Cambiar idioma de moneda, fecha ente otros de forma global en la app
+
+`https://angular.io/api/common/DatePipe`
+
 En modulo ppal app.module hago ésto
 
 import localeEs from '@angular/common/locales/es-PA'; => locale/aquí elijo el país 
