@@ -37,6 +37,14 @@ export class NoComunesComponent implements OnInit {
     'other': 'tenemos # clientes esperando.'
   }
 
+  // KeyValuePipe, obejtos literales 
+
+  persona = {
+    name: 'Hulk',
+    age: 40,
+    address: 'Hawai'
+  }
+
   borrarCliente(){
     this.clientes.pop();
   }

@@ -42,9 +42,10 @@
     </div>
 </div>
 
-<!-- https://angular.io/api/common/SlicePipe -->
 
 <div class="p-col p-md-6">
+    <!-- https://angular.io/api/common/SlicePipe -->
+
     <p-fieldset legend="Slice Pipe" [toggleable]="true">
     <b>Original</b>
         <pre>{{ clientes.length }}</pre>
@@ -63,7 +64,20 @@
         <b> slice: 1:4 (Strings) </b>
         <pre>{{ name | slice:1:4 }}</pre>
 
-        
+
     </p-fieldset>
 
+</div>
+
+
+<div class="p-col p-md-6">
+    <!-- https://angular.io/api/common/KeyValuePipe -->
+
+    <p-fieldset legend="KeyValuePipe" [toggleable]="true">
+        <ul>
+            <li *ngFor="let item of persona | keyvalue">
+                <b>{{ item.key | titlecase}}</b> : {{ item.value }}
+            </li>
+        </ul>
+    </p-fieldset>
 </div>
