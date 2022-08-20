@@ -31,6 +31,6 @@ Json
 Async
 
 Styles with
-`PrimeFlex`
+`PrimeFlex` https://www.primefaces.org/primeflex/setup
 
 `NgPrime`
