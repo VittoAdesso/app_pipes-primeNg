@@ -24,7 +24,7 @@ export class NoComunesComponent implements OnInit {
 
 
   // i18nPlural
-  clientes: string[] = ['Maria', 'Pedro', 'Aquiles', 'José']; 
+  clientes: string[] = ['Maria', 'Pedro', 'Aquiles', 'José', 'Antonia']; 
 
   // mapa para trabajar, manejamos excepciones o posibles datos
   clentesMapa ={
