@@ -6,7 +6,6 @@
 <!-- https://angular.io/api/common/DecimalPipe -->
 
 <div class="p-grid">
-
     <div class="p-col-4">
         <p-card
             header="Ventas netas"
@@ -19,4 +18,36 @@
             {{ (ventasNeta + 10000000000 )| number: '1.2-2' }}
         </p-card>
     </div>  
+</div>  
+
+<hr>
+
+<!-- https://angular.io/api/common/CurrencyPipe -->
+
+<div class="p-grid">
+
+    <div class="p-col-4">
+        <p-card
+            header="Ventas Brutas"
+            subheader="del presente año">
+            {{ (ventasNeta + 20000000000 ) | currency }} //
+            {{ (ventasNeta + 20000000000 ) | currency:'CAD' }} //
+            {{ (ventasNeta + 20000000000 ) | currency:'EUR': 'symbol-narrow':'1.4-4'}} 
+        </p-card>
     </div>  
+</div>  
+
+<!-- https://angular.io/api/common/PercentPipe -->
+
+<div class="p-grid">
+
+    <div class="p-col-4">
+        <p-card
+            header="Ganancia Porcentual"
+            subheader="del presente año">
+            {{ porcentaje | percent }} //
+            {{ porcentaje | percent: '2.2-2'}} //
+        
+        </p-card>
+    </div>  
+</div> 
