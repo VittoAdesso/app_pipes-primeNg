@@ -10,6 +10,7 @@
     <!-- para pantallas medianas (md), numero columnas (sm) -->
     <div class="p-col p-md-6 p-sm-9">
         <!-- http://primefaces.org/primeng/fieldset -->
+
         <p-fieldset legend="i18nSelect-Pipe" [toggleable]="true">
             Saludos {{ name }}, es un placer 
             {{genero | i18nSelect:invitacionMapa }} 
@@ -17,10 +18,11 @@
         </p-fieldset>
     </div>
 
-    <!-- https://angular.io/api/common/I18nPluralPipe -->
     <div class="p-col p-md-6">
+        <!-- https://angular.io/api/common/I18nPluralPipe -->
+
         <p-fieldset legend="i18nSelect-Plural Pipe" [toggleable]="true">
-            Content
+            Actualmente {{ clientes.length | i18nPlural:clentesMapa }}
         </p-fieldset>
     </div>
 </div>
