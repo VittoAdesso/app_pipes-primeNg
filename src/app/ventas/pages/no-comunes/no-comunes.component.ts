@@ -38,7 +38,6 @@ export class NoComunesComponent implements OnInit {
   }
 
   // KeyValuePipe, obejtos literales 
-
   persona = {
     name: 'Hulk',
     age: 40,
@@ -49,6 +48,16 @@ export class NoComunesComponent implements OnInit {
     this.clientes.pop();
   }
 
+  //JsonPipe
+  heroe = [
+    { name: 'Superman', 
+      fly: 'false'}, 
+    { name: 'Hulk', 
+      fly: 'false'},
+    { name: 'AquaMan', 
+      fly: 'false'} 
+  ]
+  
   constructor() { }
 
   ngOnInit(): void {

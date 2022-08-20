@@ -3,9 +3,10 @@
     <p>Pipes de Angular - Usualmente incluidos en el Common Module</p>
 </div>
 
+
+<!-- PIPE FIELDSET -->
 <!-- https://angular.io/guide/i18n-overview -->
 <!-- https://angular.io/api/common/I18nSelectPipe -->
-
 <div class="p-grid">
     <!-- para pantallas medianas (md), numero columnas (sm) -->
     <div class="p-col p-md-6 p-sm-9">
@@ -42,7 +43,7 @@
     </div>
 </div>
 
-
+<!-- SLICE PIPE -->
 <div class="p-col p-md-6">
     <!-- https://angular.io/api/common/SlicePipe -->
 
@@ -69,7 +70,7 @@
 
 </div>
 
-
+<!-- KEYVALUEPIPE -->
 <div class="p-col p-md-6">
     <!-- https://angular.io/api/common/KeyValuePipe -->
 
@@ -79,5 +80,23 @@
                 <b>{{ item.key | titlecase}}</b> : {{ item.value }}
             </li>
         </ul>
+    </p-fieldset>
+</div>
+
+<!-- JSON PIPE  util para hacer depuraciones-->
+<!-- nO GRAFICA OBJETOS CON FUNCIONES  -->
+<div class="p-col p-md-6">
+    <!-- https://angular.io/api/common/JsonPipe -->
+    <p-fieldset legend="Json PIPE" [toggleable]="true">
+       <pre>
+        {{ heroe | json}}
+       </pre> 
+
+       <!-- secodn way -->
+        <!-- <ul> -->
+            <!-- <li *ngFor="let item of heroe | keyvalue"> -->
+                <!-- {{ item.value | json }} -->
+            <!-- </li> -->
+        <!-- </ul> -->
     </p-fieldset>
 </div>
