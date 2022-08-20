@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -56,11 +57,24 @@ export class NoComunesComponent implements OnInit {
       fly: 'false'},
     { name: 'AquaMan', 
       fly: 'false'} 
-  ]
+  ]; 
+
+  //Async Pipes
+
+  // mediante observable
+  miObservale = interval(1000); 
+  // mediante promesa
+  valorPromesa = new Promise( (resolve, reject) => {
+      setTimeout(() =>{
+      resolve( 'Ready')
+  }, 5000);
+  }); 
   
-  constructor() { }
+
+  constructor() { /**empty**/}
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -100,3 +100,13 @@
         <!-- </ul> -->
     </p-fieldset>
 </div>
+
+<!-- asyncPipe sólo pasa promesas u obesrvables-->
+<div class="p-col p-md-6">
+    <!-- https://angular.io/api/common/AsyncPipe -->
+    <p-fieldset legend="Async PIPE" [toggleable]="true">
+        <pre>{{ miObservale | async }}</pre> 
+        <pre *ngIf="!(valorPromesa | async)">Resolviendo</pre>
+        <pre>{{ valorPromesa | async }}</pre>
+  
+
