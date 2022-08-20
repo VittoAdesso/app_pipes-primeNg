@@ -3,18 +3,25 @@
     <p>Pipes de Angular - Usualmente incluidos en el Common Module</p>
 </div>
 
+<!-- https://angular.io/guide/i18n-overview -->
+<!-- https://angular.io/api/common/I18nSelectPipe -->
+
 <div class="p-grid">
     <!-- para pantallas medianas (md), numero columnas (sm) -->
     <div class="p-col p-md-6 p-sm-9">
         <!-- http://primefaces.org/primeng/fieldset -->
         <p-fieldset legend="i18nSelect-Pipe" [toggleable]="true">
-            Content
+            Saludos {{ name }}, es un placer 
+            {{genero | i18nSelect:invitacionMapa }} 
+            a nuestro evento.
         </p-fieldset>
     </div>
 
+    <!-- https://angular.io/api/common/I18nPluralPipe -->
     <div class="p-col p-md-6">
         <p-fieldset legend="i18nSelect-Plural Pipe" [toggleable]="true">
             Content
         </p-fieldset>
     </div>
 </div>
+
