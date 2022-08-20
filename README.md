@@ -30,3 +30,7 @@ Json
 
 Async
 
+Styles with
+`PrimeFlex`
+
+`NgPrime`
