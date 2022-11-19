@@ -1,55 +1,36 @@
 <div class="text-layout">
-    <h1>Decimal Pipe & Porcent</h1>
-    <p>Pipes de Angular - Usualmente incluidos en el Common Module</p>
+    <h1>DecimalPipe y Porcentaje</h1>
+    <p>
+        Pipes incluídos en Angular - Usualmente en el Common Module.
+    </p>
 </div>
 
-<!-- https://angular.io/api/common/DecimalPipe -->
-
-<div class="p-grid">
-    <div class="p-col-4">
-        <p-card
-            header="Ventas netas"
-            subheader="del presente año">
-            <i class="pi pi-dollar"></i>
-            {{ ventasNeta | number }} /
-            <i class="pi pi-dollar"></i>
-            {{ ventasNeta | number: '1.2-2' }} /
-            <i class="pi pi-dollar"></i>
-            {{ (ventasNeta + 10000000000 )| number: '1.2-2' }}
-        </p-card>
-    </div>  
-</div>  
-
-<hr>
-
-<!-- https://angular.io/api/common/CurrencyPipe -->
 
 <div class="p-grid">
 
     <div class="p-col-4">
-        <p-card
-            header="Ventas Brutas"
-            subheader="del presente año">
-            {{ (ventasNeta + 20000000000 ) | currency }} //
-            {{ (ventasNeta + 20000000000 ) | currency:'CAD' }} //
-            {{ (ventasNeta + 20000000000 ) | currency:'EUR': 'symbol-narrow':'1.4-4'}} 
+        <p-card header="Ventas Netas"
+                subheader="del presente año">
+            <i class="pi pi-dollar"></i>
+            {{ (ventasNetas + 1000000) | number:'1.2-2' }}
         </p-card>
-    </div>  
-</div>  
-
-<hr>
-
-<!-- https://angular.io/api/common/PercentPipe -->
-
-<div class="p-grid">
+    </div>
 
     <div class="p-col-4">
-        <p-card
-            header="Ganancia Porcentual"
-            subheader="del presente año">
-            {{ porcentaje | percent }} //
-            {{ porcentaje | percent: '2.2-2'}} //
-        
+        <p-card header="Ventas Brutas"
+                subheader="del presente año">
+            {{ (ventasNetas + 2000000) | currency:'CAD':'symbol-narrow':'1.4-4' }}
         </p-card>
-    </div>  
-</div> 
+    </div>
+
+    <div class="p-col-4">
+        <p-card header="Ganancia porcentual"
+                subheader="del presente año">
+            {{ porcentaje | percent:'2.2-2' }}
+        </p-card>
+    </div>
+
+</div>
+
+
+

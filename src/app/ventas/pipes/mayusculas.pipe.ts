@@ -1,13 +1,20 @@
-import { Pipe, PipeTransform } from "@angular/core";
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
     name: 'mayusculas'
 })
 export class MayusculasPipe implements PipeTransform {
-    transform(value: any, ...args: any[]) {
-        throw new Error("Method not implemented.");
+
+    transform( valor: string, enMayusculas: boolean = true ): string {
+
+        // if ( enMayusculas ) {
+        //     return valor.toUpperCase();
+        // } else {
+        //     return valor.toLocaleLowerCase();
+        // }
+        return ( enMayusculas ) 
+            ? valor.toUpperCase() 
+            : valor.toLocaleLowerCase();
     }
-    trasnform( value: string, enMayuscula: boolean = true ) : string {
-        return(enMayuscula) ? value.toUpperCase() : value.toLocaleLowerCase();
-    }
+
 }

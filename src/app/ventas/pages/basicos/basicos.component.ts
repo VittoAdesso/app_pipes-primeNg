@@ -1,22 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-basicos',
   templateUrl: './basicos.component.html',
-  styleUrls: []
+  styles: [
+  ]
 })
-export class BasicosComponent implements OnInit {
+export class BasicosComponent {
 
-  nameLower: string = 'VITTORIO';
-  nameUpper: string = 'vittorio';
-  nameComplete: string = 'ViTtOrio ADeSsO'; 
+  nombreLower: string = 'fernando';
+  nombreUpper: string = 'FERNANDO';
+  nombreCompleto: string = 'fErNando herRera';
 
-
-  fecha: Date = new Date(); // hoy
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  fecha: Date = new Date(); // el día de hoy
 
 }
