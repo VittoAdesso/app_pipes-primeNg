@@ -44,3 +44,5 @@ En modulo ppal app.module hago ésto
 import localeEs from '@angular/common/locales/es-PA'; => locale/aquí elijo el país 
 import { registerLocaleData } from '@angular/common'; => igual
 registerLocaleData(localeEs); // spanish panamá  => llamo función con parámetro que le di arriba 
+
+Para crear pipes con cli de angular:
