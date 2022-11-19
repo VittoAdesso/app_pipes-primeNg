@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: []
 })
 export class OrdenarComponent implements OnInit {
-
+  enMayuscula: boolean = true; 
+  change(){
+    this.enMayuscula = !this.enMayuscula;
+  }
   constructor() { }
 
   ngOnInit(): void {
